@@ -2,6 +2,7 @@ import React from 'react';
 import{ BrowserRouter, Route,Link} from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';
+import CartScreen from './Screens/CartScreen'
 // import logo from './logo.svg';
 import './App.css';
 
@@ -36,14 +37,15 @@ function App() {
        <h3>Shopping Categories</h3> 
        <button className="sidebar-close-btn" onClick={closeMenu}>x</button>
        <ul>
-           <li><a href="#"></a>Tops and Shirts</li>
-           <li><a href="#"></a>Buttoms and Pants</li>
+           <li><a href="/"></a>Tops and Shirts</li>
+           <li><a href="/"></a>Buttoms and Pants</li>
        </ul>
     </aside>
     <main className="main">
         <div className="content">
           <Route path="/product/:id" component={ProductScreen}/>
           <Route path="/" exact={true} component={HomeScreen}/>
+          <Route path="/cart/:id?" component={CartScreen} />
        
     </div>
     </main>

@@ -1,7 +1,7 @@
 export default{
  products:[ 
         {
-        _id: "1",
+        _id: '1',
         name: 'Slim Shirt',
         category:'Shirts',
         image: '/images/d1.jpg',
@@ -11,7 +11,7 @@ export default{
         numReviews: 10
     },
     {
-        _id: "2",
+        _id: '2',
         name: 'Denim Pant',
         category:'Pants',
         image: '/images/d1.jpg',
@@ -21,7 +21,7 @@ export default{
     numReviews: 10
     },
     {
-        _id: "3",
+        _id: '3',
         name: 'Running Shoes',
         category:'Shoes',
         image: '/images/d2.jpg',
